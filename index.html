@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -24,29 +24,23 @@
                 <img src="images/logo11.png" alt="">
             </a>
         </div>
-        <div id="language">
-            <a href="index.html">
-                <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/1x1/gb.svg" alt="English">
-            </a>
-            <a href="index.html">
-                <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/1x1/pl.svg" alt="Polish">
-            </a>
-        </div>
         <nav>
             <ul>
-                <li>Start</li>
-                <li>O mnie</li>
-                <li>Portfolio</li>
-                <li>Kontakt</li>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <section id="start">
+    <a name="start"></a>
         <div class="background-start">
             <h1>Frontend Developer</h1>
         </div>
     </section>
     <section id="about">
+            <a name="about"></a>
         <div class="background">
             <div id="desc">
                 <h2>O mnie</h2>
@@ -71,36 +65,60 @@
                 </div>
             </div>
             <div id="tech">
-                <h2>Opanowane technologie</h2>
-                <div class="icons">
-                    <div class="tech-icon">
-                        <i class="fab fa-html5 fa-5x"></i>
-                    </div>
-                    <div class="tech-icon">
-                        <i class="fab fa-css3-alt fa-5x"></i>
-
-                    </div>
-                    <div class="tech-icon">
-                        <i class="devicon-javascript-plain fa-5x"></i>
-
-                    </div>
-                    <div class="tech-icon">
-                        <i class="devicon-jquery-plain-wordmark fa-5x"></i>
-                    </div>
-                    <div class="tech-icon">
-                        <i class="devicon-bootstrap-plain-wordmark fa-5x"></i>
-                    </div>
-                    <div class="tech-icon">
-                        <i class="devicon-sass-original fa-5x"></i>
-                    </div>
-                    <div class="tech-icon">
-                        <i class="devicon-gulp-plain fa-5x"></i>
+            <h2>Opanowane technologie</h2>
+            <div id="container">
+                <div id="previous"><i class="fas fa-angle-left fa-4x button" value="-1"></i>
+                </div>
+                <div id="carousel-box">
+                    <div id="carousel" class="icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-html5 fa-5x"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-css3-alt fa-5x"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="devicon-javascript-plain fa-5x"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="devicon-jquery-plain-wordmark fa-5x"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="devicon-bootstrap-plain-wordmark fa-5x"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="devicon-sass-original fa-5x"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="devicon-gulp-plain fa-5x"></i>
+                        </div>
+                        <div class="tech-icon"><i class="devicon-wordpress-plain fa-5x"></i>
+                        </div>
                     </div>
                 </div>
+                <div id="next"><i class="fas fa-angle-right fa-4x button" value="1"></i>
+                </div>
             </div>
+            <section id="content">
+                <div class="cube">
+                  <div class="a"></div>
+                  <div class="b"></div>
+                  <div class="c"></div>
+                  <div class="d"></div>
+                  <div class="e"></div>
+                </div>
+                <div class="describe">
+                <p class="desc">Podstawy</p>
+                <p class="desc">Średnio</p>
+                <p class="desc">Dobrze</p>
+                <p class="desc">Bardzo dobrze</p>
+                </div>
+              </section>
+              </div>
         </div>
     </section>
     <section id="portfolio">
+            <a name="portfolio"></a>
         <div class="background">
             <h2>Portfolio</h2>
             <div id="port-list">
@@ -126,6 +144,7 @@
         </div>
     </section>
     <section id="contact">
+            <a name="contact"></a>
         <div class="background">
             <div class="contact-sect">
                 <h2>Kontakt</h2>
@@ -134,7 +153,7 @@
                     <input type="text" class="form" id="mail" placeholder="Adres email">
                     <input type="text" class="form" id="title" placeholder="Temat wiadomości">
                     <textarea name="" class="form" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-                    <button type="submit">Wyślij</button>
+                    <div type="submit">Wyślij</div>
 
                 </form>
             </div>
@@ -161,8 +180,19 @@
             </div>
         </div>
     </section>
-    <footer>Copyright © Piotr Pietraszek</footer>
+    <footer>Copyright © Piotr Pietraszek
+        <div id="language">
+            <a href="index.html">
+                <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/1x1/gb.svg" alt="English">
+            </a>
+            <a href="index.html">
+                <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/1x1/pl.svg" alt="Polish">
+            </a>
+        </div>
 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://desandro.github.io/3dtransforms/js/utils.js"></script>
     <script src="js/main.js"></script>
 </body>
 
