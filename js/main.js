@@ -95,4 +95,14 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   window.addEventListener( 'DOMContentLoaded', init, false);
-
+  
+  function naviBar(){
+    var x = document.getElementById("nav-list");
+    console.log(x);
+    if (x.className === "nav-list") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav-list";
+    }
+  }
+document.getElementById('nav-bar').addEventListener('click', naviBar);
