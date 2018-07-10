@@ -9,21 +9,24 @@ body {
     margin: 0;
     padding: 0;
     /* background-color:rgb(42, 42, 46); */
-    background-color:rgb(240, 238, 231);
+    background-color: rgb(240, 238, 231);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
-    color: rgb(240, 238, 231);   
+    color: rgb(240, 238, 231);
 }
-header a:hover{
+
+header a:hover {
     font-weight: bold;
     text-shadow: 0 0 2px #fff;
 }
+
 h2 {
     width: 100%;
     margin: 10px 0 10px 0;
@@ -37,9 +40,11 @@ h2 {
 p {
     margin: 10px 0 10px 0;
 }
-.background{
+
+.background {
     width: 100%;
 }
+
 header {
     background-color: transparent;
     width: 100%;
@@ -54,15 +59,18 @@ header {
 
 header>#logo {
     margin-left: 50px;
+
 }
 
 header>#logo>a>img {
     height: 70px;
 }
-header>nav{
+
+header>nav {
     display: flex;
     flex-direction: column;
 }
+
 header>nav>ul {
     margin-right: 50px;
 }
@@ -73,10 +81,10 @@ header>nav>ul>li {
     margin: 10px;
 }
 
-#nav-bar{
-  display: none;
- text-align: right;
-  padding: 30px;
+#nav-bar {
+    display: none;
+    text-align: right;
+    padding: 30px;
 }
 
 #start {
@@ -85,7 +93,6 @@ header>nav>ul>li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #start>.background-start {
@@ -124,8 +131,6 @@ header>nav>ul>li {
     align-items: center;
 }
 
-
-
 #about #desc {
     margin: 0 50px 0 50px;
     opacity: 1;
@@ -139,15 +144,16 @@ header>nav>ul>li {
     margin-right: 30px;
     opacity: 1;
 }
-#tech{
-  
+
+#tech {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#about #technologies{
+
+#about #technologies {
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -155,11 +161,13 @@ header>nav>ul>li {
     justify-content: space-around;
     align-items: center;
 }
+
 #about .tech-icon {
     margin: 20px;
     color: rgb(42, 42, 46);
 }
-#about #courses{
+
+#about #courses {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -168,7 +176,8 @@ header>nav>ul>li {
     align-items: center;
     margin: 20px 0 20px 0;
 }
-#about #courses > div{
+
+#about #courses>div {
     width: 200px;
     height: 200px;
     margin: 10px;
@@ -178,14 +187,16 @@ header>nav>ul>li {
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(42, 42, 46, 0.2), 0 6px 20px 0 rgba(42, 42, 46, 0.19);
 }
-#about #courses > div:hover{
+
+#about #courses>div:hover {
     box-shadow: 0 8px 16px 0 rgba(42, 42, 46, 0.2), 0 12px 40px 0 rgba(42, 42, 46, 0.19);
 }
-#about #courses p{
+
+#about #courses p {
     margin: 10px;
 }
 
-#about .course-icon{
+#about .course-icon {
     margin: 10px 0 20px 0;
     height: auto;
     width: 120px;
@@ -194,9 +205,9 @@ header>nav>ul>li {
 #about .background {
     z-index: 3;
     box-shadow: 0px 1px 5px #000;
-    
 }
-#portfolio .background{
+
+#portfolio .background {
     background-image: url("../images/blur.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -226,23 +237,29 @@ header>nav>ul>li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 180%;
-   transition: all 0.5s;
+    transition: all 0.5s;
 }
-#portfolio .port:hover{
+
+#portfolio .port:hover {
     background-size: 220%;
 }
-#portfolio .port.first{
+
+#portfolio .port.first {
     background-image: url(../images/portfolioGame.png);
 }
-#portfolio .port.sec{
+
+#portfolio .port.sec {
     background-image: url(../images/portfolioPortfolio.PNG);
 }
-#portfolio .port.third{
+
+#portfolio .port.third {
     background-image: url(../images/portfolioBS.PNG);
 }
-#portfolio .port.forth{
+
+#portfolio .port.forth {
     background-image: url(../images/portfolioPSD1.PNG);
 }
+
 #contact .background {
     width: 100%;
     display: flex;
@@ -294,17 +311,20 @@ header>nav>ul>li {
     border: 1px solid transparent;
     border-radius: 3px;
 }
+
 #contact [type="submit"]:hover {
     background-color: rgb(88, 165, 95);
-
 }
+
 #contact .media-icon {
     margin: 20px;
     color: rgb(42, 42, 46);
 }
-.media-icon>i:hover{
-    color: rgba(88, 165, 95, 0.88);;
-    text-shadow:0 0 5px #fff;
+
+.media-icon>i:hover {
+    color: rgba(88, 165, 95, 0.88);
+    ;
+    text-shadow: 0 0 5px #fff;
 }
 
 footer {
@@ -322,5 +342,3 @@ footer>#language>a>.flag {
     margin: 0 5px 0 5px;
     border-radius: 5px;
 }
-
-
