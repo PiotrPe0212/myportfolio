@@ -18,10 +18,7 @@ display: none;
     flex-direction: column;
     padding-top: 180px;
     margin-right: 0px;
-}
-#nav-list.responsive{
-
-background-color:#1A3540;
+    background-color:rgb(42, 42, 46);
 }
 @media all and (max-width: 768px){
     #contact .background {

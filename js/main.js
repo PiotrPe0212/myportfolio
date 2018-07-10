@@ -1,8 +1,14 @@
+const navList = document.getElementById("nav-list");
+
 document.addEventListener("DOMContentLoaded", function () {
-    window.onscroll = function () { myFunction() };
+    window.onscroll = function () { scrolling() };
+    document.getElementById('nav-bar').addEventListener('click', naviBar);
+    navList.addEventListener('mouseleave', function (event){
+     event.target.classList.remove("responsive");
+    });
   });
   
- myFunction = (e) =>{
+ scrolling = (e) =>{
     var navbar = document.getElementById("navi");
   if(window.pageYOffset <= 80){
     navbar.style.display = "flex";
@@ -18,6 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.style.display = "none";
     }
     this.oldScroll = this.scrollY;
+  }
+
+ function naviBar(){
+   if (navList.className != "responsive") {
+        navList.classList.add("responsive");
+    } else {
+      navList.classList.remove("responsive");
+    }
   }
 
   
