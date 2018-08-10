@@ -1,18 +1,19 @@
-/* kolory:
-1A3540
-B6EAFF
-69D4FF
-5B757F
-54A9CC */
 
 body {
     margin: 0;
     padding: 0;
     /* background-color:rgb(42, 42, 46); */
     background-color: rgb(240, 238, 231);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
@@ -49,10 +50,19 @@ header {
     background-color: transparent;
     width: 100%;
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     z-index: 100;
 }
@@ -66,8 +76,13 @@ header>#logo>a>img {
 }
 
 header>nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 header>nav>ul {
@@ -89,9 +104,15 @@ header>nav>ul>li {
 #start {
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #start>.background-start {
@@ -102,11 +123,18 @@ header>nav>ul>li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1;
-    box-shadow: 0px 1px 5px #000;
+    -webkit-box-shadow: 0px 1px 5px #000;
+            box-shadow: 0px 1px 5px #000;
 }
 
 #start>.background-start>h1 {
@@ -125,9 +153,15 @@ header>nav>ul>li {
 #portfolio,
 #contact {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #about #desc {
@@ -146,19 +180,36 @@ header>nav>ul>li {
 
 #tech {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #about #technologies {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #about .tech-icon {
@@ -168,11 +219,20 @@ header>nav>ul>li {
 
 #about #courses {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 20px 0 20px 0;
 }
 
@@ -180,15 +240,26 @@ header>nav>ul>li {
     width: 200px;
     height: 200px;
     margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(42, 42, 46, 0.2), 0 6px 20px 0 rgba(42, 42, 46, 0.19);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(42, 42, 46, 0.2), 0 6px 20px 0 rgba(42, 42, 46, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(42, 42, 46, 0.2), 0 6px 20px 0 rgba(42, 42, 46, 0.19);
 }
 
 #about #courses>div:hover {
-    box-shadow: 0 8px 16px 0 rgba(42, 42, 46, 0.2), 0 12px 40px 0 rgba(42, 42, 46, 0.19);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(42, 42, 46, 0.2), 0 12px 40px 0 rgba(42, 42, 46, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(42, 42, 46, 0.2), 0 12px 40px 0 rgba(42, 42, 46, 0.19);
 }
 
 #about #courses p {
@@ -203,7 +274,8 @@ header>nav>ul>li {
 
 #about .background {
     z-index: 3;
-    box-shadow: 0px 1px 5px #000;
+    -webkit-box-shadow: 0px 1px 5px #000;
+            box-shadow: 0px 1px 5px #000;
 }
 
 #portfolio .background {
@@ -212,16 +284,27 @@ header>nav>ul>li {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
-    box-shadow: 0px 1px 5px #000;
+    -webkit-box-shadow: 0px 1px 5px #000;
+            box-shadow: 0px 1px 5px #000;
     padding-bottom: 20px;
 }
 
 #portfolio #port-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 #portfolio .port {
@@ -232,10 +315,13 @@ header>nav>ul>li {
     width: 300px;
     background-color: rgba(88, 165, 95, 0.5);
     margin: 10px;
-    box-shadow: 1px 1px 2px #000;
+    -webkit-box-shadow: 1px 1px 2px #000;
+            box-shadow: 1px 1px 2px #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 180%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -268,6 +354,8 @@ header>nav>ul>li {
     height: 100%;
     background-color: rgba(88, 165, 95, 0.8);
     opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
     text-align: center;
 }
@@ -282,27 +370,52 @@ header>nav>ul>li {
 
 #contact .background {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-bottom: 30px;
     z-index: 1;
-    box-shadow: 0px 1px 5px #000;
+    -webkit-box-shadow: 0px 1px 5px #000;
+            box-shadow: 0px 1px 5px #000;
 }
 
 #contact .contact-sect {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 #contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #contact .form {
@@ -351,9 +464,16 @@ header>nav>ul>li {
 }
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: rgb(240, 238, 231);
     background-color: rgb(42, 42, 46);
     padding: 10px;
